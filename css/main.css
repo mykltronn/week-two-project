@@ -92,6 +92,24 @@ header {
   width: 100%;
 }
 
+.up-next h1 {
+
+}
+
+.picture-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#rashomon {
+  height: 100%;
+}
+#train-bic {
+  height: 50%;
+}
+#nos-met {
+  height: 50%;
+}
 
 
 
