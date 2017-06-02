@@ -16,3 +16,9 @@ calendar highlighted day: #F5005B
 button background: #F5005B
 copyright text: #FFFFFF
 */
+
+* {
+  font-family: 'PT Sans';
+  padding: 0px;
+  margin: 0px;
+}
