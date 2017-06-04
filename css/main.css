@@ -50,6 +50,7 @@ header {
   width: 120px;
 }
 /*##########*/
+
 #home {
   background-color: #00A5BF;
 }
@@ -88,7 +89,7 @@ header {
 
 .up-next {
   background-color: #0B1942;
-  height: auto;
+  height: 1200px;
   width: 100%;
 }
 
@@ -96,96 +97,139 @@ header {
   color: white;
   float: left;
   margin: 20px 30px;
+  width: 100%;
+  text-align: left;
 }
 
 .picture-flex {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-
-}
-#rashomon {
-  background-color: white;
-  height: 400px;
-  width: 45%;
+  height: 95%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-    }
-    #rashomon img {
-      width: 300px;
-      height: 400px;
-      padding: 20px 0px 20px 20pxs;
-      margin-right: 10px;
-    }
-    #rash-deets {
-      border-bottom: solid 1px black;
-    }
-    #discussion {
-
-    }
+}
+#rash-squeeze {
+  width: 40%;
+  height: 100%;
+}
+#rashomon {
+  height: 48%;
+  width: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+  #rash-img {
+    background-image: url("../images/rashomon-poster.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: 1 / 1 / 4 / 2;
+    width: auto;
+    height: 100%;
+  }
+  #rash-deets {
+    grid-area: 1 / 2 / 2 / 3;
+    margin: 20px;
+  }
+  #discussion {
+    grid-area: 2 / 2 / 4 / 3;
+    margin: 20px;
+  }
+  #discussion ul {
+    margin-left: 20px;
+  }
 
 #train-bic {
+  height: 49%;
+  width: 40%;
   background-color: white;
-  height: 430px;
-  width: 45%;
-
 }
   #train {
-      width: 300px;
-      height: 380px;
-      margin: 10px;
-      display: inline-block;
+    width: 45%;
+    height: 100%;
   }
-    #train img {
-      width: 90%;
-    }
-    #train h3 {
-      width: 100%;
-    }
-
+  #train-img {
+    background-image: url("../images/great-train-poster.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 85%;
+  }
   #bicycle {
-      /*background-image: url('../images/bicycle-thief-poster.jpg');
-      background-repeat: none;
-      background-size: cover;*/
-      height: 100%;
-      width: 40%;
-      margin: 10px;
-      display: inline-block;
+    width: 45%;
+    height: 100%;
   }
-    #bicycle img {
-      width: 90%;
-    }
-    #bicycle h3 {
-      width: 100%;
-    }
-
+  #bic-img {
+    background-image: url("../images/bicycle-thief-poster.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 85%;
+  }
 
 #nos-met {
+  height: 49%;
+  width: 40%;
   background-color: white;
-  width: 48%;
-  display: grid;
 }
   #nosferatu {
-    /*background-image: url('../images/nosferatu-poster.jpg');
-    background-repeat: none;
-    background-size: cover;*/
+    width: 45%;
     height: 100%;
-    width: 80px;
-    margin: 10px;
-    }
+  }
+  #nos-img {
+    background-image: url("../images/nosferatu-poster.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 85%;
+  }
   #metropolis {
-    /*background-image: url('../images/metro-poster.jpg');
-    background-repeat: none;
-    background-size: cover;*/
+    width: 45%;
     height: 100%;
-    width: 80px;
-    margin: 10px;
-    }
+  }
+  #met-img {
+    background-image: url("../images/metropolis-poster.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 85%;
+  }
+
+
+
+/*########### footer #########*/
+
+footer {
+  background-color: #7DDFE8;
+  width: 100%;
+  height: 140px;
+  /*display: flex;
+  justify-content: flex-start;*/
+}
+
+.nav-item {
+  height: 100%;
+  width: 120px;
+  display: inline-block;
+}
 
 
 
 
 
-/*############## whitespace maker ###########*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*############# Whitespace maker ###########*/
