@@ -23,6 +23,7 @@ copyright text: #FFFFFF
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  color: #0B1942;
 }
 
 /*#################### Header #################*/
@@ -89,7 +90,7 @@ header {
 
 .up-next {
   background-color: #0B1942;
-  height: 1200px;
+  height: 120vh;
   width: 100%;
 }
 
@@ -103,19 +104,21 @@ header {
 
 .picture-flex {
   width: 100%;
-  height: 95%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 #rash-squeeze {
-  width: 45%;
+  width: 48%;
   height: 100%;
+  margin-right: 20px;
 }
 #rashomon {
-  height: auto;
+  height: 50%;
   width: 100%;
-  background-color: white;
+  background-color: #E2E2E2;
   display: grid;
   grid-template-columns: 50%;
   grid-template-rows: 1fr 1fr 1fr;
@@ -132,88 +135,110 @@ header {
   }
   #rash-deets {
     grid-area: 1 / 2 / 2 / 3;
-    margin: 20px;
+    border-bottom: solid 2px #0B1942;
+    font-size: 28px;
   }
+    #rash-deets a {
+      color: #00B7D3;
+      text-decoration: underline;
+      font-size: 46px;
+    }
   #discussion {
     grid-area: 2 / 2 / 4 / 3;
-    margin: 20px;
+    /*margin-left: 20px;*/
+  }
+  #discussion h3 {
+    font-weight: bold;
+    font-size: 30px;
   }
   #discussion ul {
-    margin-left: 20px;
+    list-style-type: circle;
+    font-size: 22px;
+    margin: 5px 0px 0px 30px;
   }
 
 .poster-grid {
+  height: 50%;
+  width: 47%;
+  background-color: #E2E2E2;
   display: grid;
   grid-template-columns: 50%;
-  grid-template-rows: 85% 15%;
+  grid-template-rows: 80% 20%;
+}
+#train-img {
+  background-image: url("../images/great-train-poster.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-area: 1 / 1 / 2 / 2;
+  margin: 20px;
+
+}
+#bic-img {
+  background-image: url("../images/bicycle-thief-poster.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-area: 1 / 2 / 2 / 3;
+
+  width: auto;
+  height: auto;
+  margin: 10px 10px 0px 10px;
 }
 
-span {
-
+#train-deets {
+  grid-area: 2 / 1 / 3 / 3;
 }
 
+#bic-deets {
+  grid-area: 2 / 2 / 3 / 3;
+}
 
-#train-bic {
-  height: 49%;
+#train-deets a, #bic-deets a, #nos-deets a, #met-deets a {
+  color: #00B7D3;
+  text-decoration: underline;
+}
+/*#train {
   width: 45%;
-  background-color: white;
-}
-  #train {
-    width: 45%;
-    height: 100%;
-  }
-  #train-img {
-    background-image: url("../images/great-train-poster.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 90%;
-    margin: 20px 15px;
-  }
-  #bicycle {
-    width: 45%;
-    height: 100%;
-  }
-  #bic-img {
-    background-image: url("../images/bicycle-thief-poster.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 90%;
-    margin: 20px 15px;
-  }
-
-#nos-met {
-  height: 49%;
+  height: 100%;
+  }*/
+/*
+#bicycle {
   width: 45%;
-  background-color: white;
+  height: 100%;
+}*/
+/*
+#nosferatu {
+  width: 45%;
+  height: 100%;
+}*/
+#nos-img {
+  background-image: url("../images/nosferatu-poster.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-area: 1 / 1 / 2 / 2;
+  /*width: 100%;
+  height: 90%;
+  margin: 20px 15px;*/
 }
-  #nosferatu {
-    width: 45%;
-    height: 100%;
-  }
-  #nos-img {
-    background-image: url("../images/nosferatu-poster.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 90%;
-    margin: 20px 15px;
-  }
-  #metropolis {
-    width: 45%;
-    height: 100%;
-  }
-  #met-img {
-    background-image: url("../images/metropolis-poster.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 90%;
-    margin: 20px 15px;
-  }
-
-
+#met-img {
+  background-image: url("../images/metropolis-poster.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-area: 1 / 2 / 2 / 3;
+  /*width: 100%;
+  height: 90%;
+  margin: 20px 15px;*/
+}
+#nos-deets {
+  grid-area: 2 / 1 / 2 / 3;
+}
+#met-deets {
+  grid-area: 2 / 2 / 3 / 3;
+}
+/*
+#metropolis {
+  width: 45%;
+  height: 100%;
+}*/
 
 /*########### footer #########*/
 
