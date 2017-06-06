@@ -63,10 +63,20 @@ header {
 
 /*########### calendar section ########*/
 
+#meetup-calendar h1 {
+  margin: 30px 20px;
+}
+
 #meet-cal {
   background-color: #0B1942;
   width: 100vw;
   height: 140vh;
+}
+
+#meet-cal h2 {
+  float: left;
+  margin: 20px;
+  color: white;
 }
 
 table {
@@ -74,16 +84,34 @@ table {
   height: 90%;
   color: #0B1942;
   background-color: white;
-  margin: 10px;
+  /*margin: 10px;*/
 }
 
 td {
-  border: solid 1px #0B1942;
+  position: relative;
+  border: solid 3px #0B1942;
 }
 
+.date-box {
+  text-align: center;
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #0B1942;
+  width: 15%;
+  height: 15%;
+  top: 0px;
+  left: 0px;
+}
 
+.faker {
+  background-color: #0B1942;
+}
 
-
+.pinkies {
+  background-color: #F5005B;
+}
 
 
 
