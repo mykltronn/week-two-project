@@ -1,0 +1,29 @@
+
+
+
+@media screen and (max-width: 1000px) {
+
+  #rash-squeeze {
+    width: 100%;
+    height: 60%;
+  }
+  .poster-grid {
+    width: 48%;
+    height: 38%;
+  }
+
+}
+
+@media screen and (max-width: 545px) {
+
+
+  #rash-squeeze {
+    height: 30%;
+    width: 100%;
+  }
+  .poster-grid {
+    height: 30%;
+    width: 100%;
+  }
+
+}
