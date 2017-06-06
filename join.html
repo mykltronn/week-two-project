@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/join.css">
@@ -27,67 +27,70 @@
   </header>
 
   <section>
+
     <form id="join-form" action="" method="post">
+      <div id="join-flex-1">
+        <fieldset>
+          <label for="profilepic">profile picture</label>
+          <input type="file" name="profilepic" value="Choose File">
+          <div id="profile-placeholder"></div>
+        </fieldset>
 
-      <fieldset>
-        <label for="profilepic">profile picture</label>
-        <input type="file" name="profilepic" value="Choose File">
-        <div id="profile-placeholder"></div>
-      </fieldset>
+        <fieldset>
+          <label for="name">name</label>
+          <input type="text" name="name">
 
-      <fieldset>
-        <label for="name">name</label>
-        <input type="text" name="name">
+          <label for="email">email address</label>
+          <input type="email" name="email">
 
-        <label for="email">email address</label>
-        <input type="email" name="email">
+          <label for="password">password</label>
+          <input type="password" name="password">
 
-        <label for="password">password</label>
-        <input type="password" name="password">
+          <label for="passconfirm">confirm password</label>
+          <input type="passowrd" name="passconfirm">
+        </fieldset>
+      </div>
 
-        <label for="passconfirm">confirm password</label>
-        <input type="passowrd" name="passconfirm">
-      </fieldset>
+        <fieldset id="join-flex-2">
+          <legend>Which genres are you interested in?</legend>
 
-      <fieldset>
-        <legend>Which genres are you interested in?</legend>
+          <label for="action">
+          <input type="checkbox" name="action">action</label>
+          <label for="adventure">
+          <input type="checkbox" name="adventure">adventure</label>
+          <label for="comedy">
+          <input type="checkbox" name="comedy">comedy</label>
 
-        <label for="action">
-        <input type="checkbox" name="action">action</label>
-        <label for="adventure">
-        <input type="checkbox" name="adventure">adventure</label>
-        <label for="comedy">
-        <input type="checkbox" name="comedy">comedy</label>
+          <label for="drama">
+          <input type="checkbox" name="drama">drama</label>
+          <label for="fanatasy">
+          <input type="checkbox" name="fanatasy">fanatasy</label>
+          <label for="historical">
+          <input type="checkbox" name="historical">historical</label>
 
-        <label for="drama">
-        <input type="checkbox" name="drama">drama</label>
-        <label for="fanatasy">
-        <input type="checkbox" name="fanatasy">fanatasy</label>
-        <label for="historical">
-        <input type="checkbox" name="historical">historical</label>
+          <label for="horror">
+          <input type="checkbox" name="horror">horror</label>
+          <label for="mystery">
+          <input type="checkbox" name="mystery">mystery</label>
+          <label for="romance">
+          <input type="checkbox" name="romance">romance</label>
 
-        <label for="horror">
-        <input type="checkbox" name="horror">horror</label>
-        <label for="mystery">
-        <input type="checkbox" name="mystery">mystery</label>
-        <label for="romance">
-        <input type="checkbox" name="romance">romance</label>
+          <label for="science fiction">
+          <input type="checkbox" name="science fiction">science fiction</label>
+          <label for="western">
+          <input type="checkbox" name="western">western</label>
 
-        <label for="science fiction">
-        <input type="checkbox" name="science fiction">science fiction</label>
-        <label for="western">
-        <input type="checkbox" name="western">western</label>
+        </fieldset>
 
-      </fieldset>
+        <fieldset>
+          <label for="additional">Additional input</label>
+          <input type="textarea" name="additonal" value="bla bla bla">
+        </fieldset>
 
-      <fieldset>
-        <label for="additional">Additional input</label>
-        <input type="textarea" name="additonal" value="bla bla bla">
-      </fieldset>
+        <fieldset>
+          <input type="submit" value="Join Film Club">
+        </fieldset>
 
-      <fieldset>
-        <input type="submit" value="Join Film Club">
-      </fieldset>
     </form>
   </section>
 

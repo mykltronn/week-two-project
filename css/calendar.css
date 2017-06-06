@@ -18,49 +18,6 @@ button background: #F5005B
 copyright text: #FFFFFF
 */
 
-* {
-  font-family: 'PT Sans';
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-}
-
-/*#################### Header #################*/
-
-header {
-  background-color: #7DDFE8;
-  width: 100%;
-  height: 140px;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.logo {
-  background-color: #F5005B;
-  width: 140px;
-}
-/*##########*/
-.logo img {
-  height: 100%;
-  width: 100%;
-  padding: 10px;
-}
-.nav-item {
-  height: 100%;
-  width: 120px;
-}
-/*##########*/
-
-#home {
-  background-color: #00A5BF;
-}
-#calendar {
-  background-color: #00B7D3;
-}
-#join {
-  background-color: #00D5E7;
-}
-
 /*########### calendar section ########*/
 
 #meetup-calendar h1 {
@@ -70,7 +27,7 @@ header {
 #meet-cal {
   background-color: #0B1942;
   width: 100vw;
-  height: 140vh;
+  height: 80vw;
 }
 
 #meet-cal h2 {
@@ -105,7 +62,7 @@ td {
   left: 0px;
 }
 
-.faker {
+.pysch {
   background-color: #0B1942;
 }
 
