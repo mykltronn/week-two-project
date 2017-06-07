@@ -21,6 +21,130 @@ copyright text: #FFFFFF
 /********** stursh *********/
 
 #profile-placeholder {
-  background-image: url("images/profile-placeholder.png");
+  background-image: url("../images/profile-placeholder.png");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  margin: 20px;
 }
+
+/**********join-flex-1********/
+section h1 {
+  font-size: 52px;
+  margin: 20px;
+}
+
+#join-flex-1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#jf1-1 {
+  width: 30%;
+  height: 100%;
+  /*margin-right: 20px;*/
+}
+.jf1-2 {
+  width: 30%;
+}
+
+.jf1-2 input {
+  width: 100%;
+  height: 40px;
+}
+
+#jf1-1 label, #jf1-1 input {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.jf1-2 div {
+  margin: 10px;
+}
+
+.jf1-2 div label {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+
+/*join-flex-2*/
+
+#join-flex-2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jf2-1 {
+  font-size: 20px;
+  font-weight: normal;
+  width: 30%;
+  margin-left: 5px;
+}
+
+.jf2-1 input {
+  margin-right: 5px;
+}
+
+.jf2-1 label {
+  font-weight: normal;
+  font-size: 26px;
+}
+
+legend {
+  border: none;
+}
+
+#genres {
+  width: 100%;
+  /*height: 30vh;*/
+  margin: 30px;
+}
+
+#additional {
+  width: 100%;
+  margin: 30px;
+}
+
+#additional label {
+  font-size: 20px;
+  font-weight: normal;
+
+}
+
+#additional input {
+  width: 65%;
+  height: 80px;
+  border: solid 2px darkgrey;
+  resize: both;
+  overflow: auto;
+}
+
+#submit {
+  border-radius: 0%;
+  border: none;
+  background-color: #F5005B;
+  color: white;
+  font-size: 24px;
+  height: 60px;
+  width: 200px;
+  margin: 60px 30px;
+}
+
+
+
+
+
+
+
+/*######### footerzzz ######*/
+
+
+/*white space*/

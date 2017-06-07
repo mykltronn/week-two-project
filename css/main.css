@@ -23,18 +23,20 @@ copyright text: #FFFFFF
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  font-weight: normal;
   color: #0B1942;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+input:hover {
+  cursor: pointer;
 }
 
 /*#################### Header #################*/
 
-header {
-  background-color: #7DDFE8;
-  width: 100%;
-  height: 140px;
-  display: flex;
-  justify-content: flex-start;
-}
 
 .logo {
   background-color: #F5005B;
@@ -46,44 +48,80 @@ header {
   width: 100%;
   padding: 10px;
 }
-.nav-item {
-  height: 100%;
-  width: 120px;
-}
+
 /*##########*/
 
 #home {
   background-color: #00A5BF;
+  width: 140px;
 }
 #calendar {
   background-color: #00B7D3;
+  width: 140px;
 }
 #join {
   background-color: #00D5E7;
+  width: 140px;
+}
+
+nav {
+  background-color: #7DDFE8;
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 60px;
+  font-size:22px;
 }
 
 /*########### Get Involved Section ########*/
 
 .get-involved {
-  width: 95%;
-  height: 200px;
+
 }
 
-.get-involved h1 {
-  width: 100%;
-}
 
-.text-boxes {
+#flex-text{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.text-box {
-  width: 30%;
+.get-involved h1 {
+  color: #0B1942;
+  font-weight: normal;
+  width: 100%;
+  padding-left: 15px;
 }
 
+.text-box {
+  width: 28%;
+  margin: 0px 15px;
+}
 
+.text-box h2 {
+  background-color: #0B1942;
+  color: white;
+  font-size: 36px;
+  font-weight: normal;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.text-box p {
+  color: #0B1942;
+  font-size: 22px;
+  line-height: 1.4;
+  padding: 5px 0px 40px;
+
+}
 
 /*########## Up Next ###########*/
 
@@ -94,11 +132,11 @@ header {
   width: 100%;
 }
 
-.up-next h1 {
+ .up-next h1 {
   color: white;
   float: left;
   margin: 20px 30px;
-  width: 100%;
+  width: 80%;
   text-align: left;
 }
 
@@ -124,38 +162,45 @@ header {
   grid-template-rows: 1fr 1fr 1fr;
   margin-left: 20px;
 }
-  #rash-img {
-    background-image: url("../images/rashomon-poster.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-    margin: 20px 15px;
-    grid-area: 1 / 1 / 4 / 2;
+#rash-img {
+  background-image: url("../images/rashomon-poster.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  margin: 20px 15px;
+  grid-area: 1 / 1 / 4 / 2;
   }
-  #rash-deets {
-    grid-area: 1 / 2 / 2 / 3;
-    border-bottom: solid 2px #0B1942;
-    font-size: 28px;
-  }
-    #rash-deets a {
-      color: #00B7D3;
-      text-decoration: underline;
-      font-size: 46px;
-    }
-  #discussion {
-    grid-area: 2 / 2 / 4 / 3;
-    /*margin-left: 20px;*/
-  }
-  #discussion h3 {
-    font-weight: bold;
-    font-size: 30px;
-  }
-  #discussion ul {
-    list-style-type: circle;
-    font-size: 22px;
-    margin: 5px 0px 0px 30px;
-  }
+#rash-deets {
+  grid-area: 1 / 2 / 2 / 3;
+  border-bottom: solid 2px #0B1942;
+  padding-top: 20px;
+}
+
+#rash-deets a {
+  color: #00B7D3;
+  text-decoration: underline;
+  font-size: 3.2vw;
+}
+
+#rash-deets p {
+  font-size: 2vw;
+}
+
+#discussion {
+  grid-area: 2 / 2 / 4 / 3;
+  /*margin-left: 20px;*/
+}
+#discussion h3 {
+  padding-top: 15px;
+  font-weight: bold;
+  font-size: 2vw;
+}
+#discussion ul {
+  list-style-type: circle;
+  font-size: 2vw;
+  margin: 5px 0px 0px 30px;
+}
 
 .poster-grid {
   height: 50%;
@@ -170,7 +215,9 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   grid-area: 1 / 1 / 2 / 2;
-  margin: 20px;
+  width: auto;
+  height: auto;
+  margin: 10px 10px 0px 10px;
 
 }
 #bic-img {
@@ -178,7 +225,6 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   grid-area: 1 / 2 / 2 / 3;
-
   width: auto;
   height: auto;
   margin: 10px 10px 0px 10px;
@@ -186,53 +232,51 @@ header {
 
 #train-deets {
   grid-area: 2 / 1 / 3 / 3;
+  margin-left: 15px;
 }
 
 #bic-deets {
   grid-area: 2 / 2 / 3 / 3;
+  margin-left: 15px;
 }
 
 #train-deets a, #bic-deets a, #nos-deets a, #met-deets a {
   color: #00B7D3;
   text-decoration: underline;
+  font-weight: normal;
+  font-size: 3.5vh;
 }
-/*#train {
-  width: 45%;
-  height: 100%;
-  }*/
-/*
-#bicycle {
-  width: 45%;
-  height: 100%;
-}*/
-/*
-#nosferatu {
-  width: 45%;
-  height: 100%;
-}*/
+
+#train-deets p, #bic-deets p, #nos-deets p, #met-deets p {
+  font-size: 3.5vh;
+}
+
+
 #nos-img {
   background-image: url("../images/nosferatu-poster.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   grid-area: 1 / 1 / 2 / 2;
-  /*width: 100%;
-  height: 90%;
-  margin: 20px 15px;*/
+  width: auto;
+  height: auto;
+  margin: 10px 10px 0px 10px;
 }
 #met-img {
   background-image: url("../images/metropolis-poster.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   grid-area: 1 / 2 / 2 / 3;
-  /*width: 100%;
-  height: 90%;
-  margin: 20px 15px;*/
+  width: auto;
+  height: auto;
+  margin: 10px 10px 0px 10px;
 }
 #nos-deets {
   grid-area: 2 / 1 / 2 / 3;
+  margin-left: 15px;
 }
 #met-deets {
   grid-area: 2 / 2 / 3 / 3;
+  margin-left: 15px;
 }
 /*
 #metropolis {
@@ -242,12 +286,21 @@ header {
 
 /*########### footer #########*/
 
-footer {
+#legal {
+  align-self: center;
+  width: 65%;
+  text-align: right;
+  font-size: 20px;
+  color: white;
+  font-weight: normal;
+}
+
+
+/*footer {
   background-color: #7DDFE8;
   width: 100%;
   height: 140px;
-  /*display: flex;
-  justify-content: flex-start;*/
+
 }
 
 .nav-item {
@@ -255,7 +308,7 @@ footer {
   width: 120px;
   display: inline-block;
 }
-
+*/
 
 
 

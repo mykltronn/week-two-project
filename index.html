@@ -15,21 +15,24 @@
 
   <body>
 
-  <header>
+    <header>
 
-    <div class="logo"><img src="images/filmclub.png" alt="The Film Club Logo"></div>
+      <nav>
+        <div class="logo"><img src="images/filmclub.png" alt="The Film Club Logo"></div>
 
-    <nav class="nav-item" id="home"><a href="#">Home</a></nav>
-    <nav class="nav-item" id="calendar"><a href="#">Calendar</a></nav>
-    <nav class="nav-item" id="join"><a href="#">Join</a></nav>
+        <a id="home" href="index.html">Home</a>
+        <a id="calendar" href="calendar.html">Calendar</a>
+        <a id="join" href="join.html">Join</a>
 
-  </header>
+      </nav>
+
+    </header>
 
   <section class="get-involved">
-    <h1>Get Involved</h1>
 
-      <div class="text-boxes">
 
+    <div id="flex-text">
+      <h1>Get Involved</h1>
         <div class="text-box">
           <h2>Watch</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -60,7 +63,7 @@
             <div id="rash-img"></div>
 
             <div id="rash-deets">
-              <h2><a href="#">Rashomon</a></h2>
+              <h2><a href="https://www.youtube.com/watch?v=7QTrx3YNz7A&t=8s">Rashomon</a></h2>
               <p>Film Club: <strong>6/13</strong></p>
            </div>
 
@@ -81,29 +84,27 @@
       <div class="poster-grid" id="train-bic">
           <div id="train-img"></div>
           <span id="train-deets">
-            <h3><a href="#">The Great Train Robbery</a></h3>
+            <h3><a href="https://www.youtube.com/watch?v=zuto7qWrplc">The Great Train Robbery</a></h3>
             <p>Film Club: <strong>6/27</strong></p>
           </span>
 
           <div id="bic-img"></div>
           <span id="bic-deets">
-            <h3><a href="#">The Bicycle Thief</a></h3>
+            <h3><a href="https://www.youtube.com/watch?v=H3jnzXX9mXs">The Bicycle Thief</a></h3>
             <p>Film Club: <strong>7/11</strong></p>
           </span>
         </div>
 
-      <!-- </div> -->
-
       <div class="poster-grid" id="nos-met">
           <div id="nos-img"></div>
           <span id="nos-deets">
-            <h3><a href="#">Nosferatu</a></h3>
+            <h3><a href="https://www.youtube.com/watch?v=FC6jFoYm3xs">Nosferatu</a></h3>
             <p>Film Club: <strong>725</strong></p>
           </span>
 
           <div id="met-img"></div>
           <span id="met-deets">
-            <h3><a href="#">Metropolis</a></h3>
+            <h3><a href="https://www.youtube.com/watch?v=Q0NzALRJifI">Metropolis</a></h3>
             <p>Film Club: <strong>8/08<strong></p>
           </span>
         </div>
@@ -114,17 +115,17 @@
   </section>
 
   <footer>
+    <nav id="media-foot">
 
-    <ul class="nav">
-      <li class="nav-item">Home</li>
-      <li class="nav-item">Calendar</li>
-      <li class="nav-item">Join</li>
-    </ul>
+      <a id="home" class="foot-home" href="index.html">Home</a>
+      <a id="calendar" class="foot-cal" href="calendar.html">Calendar</a>
+      <a id="join" class="foot-join" href="join.html">Join</a>
 
-    <div class="legal">(c) 2017, Film Club</div>
+      <div id="legal">(c) 2017, Film Club</div>
+
+    </nav>
 
   </footer>
-
   </body>
 
 </html>
