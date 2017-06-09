@@ -20,7 +20,7 @@ copyright text: #FFFFFF
 
 /*########### calendar section ########*/
 
-#meet-calendar {
+#meetup-calendar {
 
 }
 #cal-heading {
@@ -52,6 +52,7 @@ table {
   height: 70vw;
   color: #0B1942;
   background-color: white;
+  border-collapse: collapse;
 }
 
 td {

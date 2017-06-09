@@ -25,6 +25,7 @@ copyright text: #FFFFFF
   box-sizing: border-box;
   font-weight: normal;
   color: #0B1942;
+  border: none;
 }
 
 a:hover {
@@ -148,6 +149,7 @@ nav a{
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 #rash-squeeze {
   width: 48%;
   height: 100%;
